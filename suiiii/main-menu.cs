@@ -71,10 +71,75 @@ namespace suiiii
                     projects.Variabler();
                     break;
 
+                case 2: 
+                    projects.Strings();
+                    break;
+
+                case 3:
+                    projects.Aritmetiske_Udtryk();
+                    break;
+
+                case 4:
+                    projects.Variabler_i_Udtryk();
+                    break;
+
+                case 5:
+                    projects.Boolske_variable();
+                    break;
+
+                case 6:
+                    projects.If_else_statements();
+                    break;
+
+                case 7:
+                    projects.Switch_Case();
+                    break;
+
+                case 8:
+                    projects.Loops();
+                    break;
+
+                case 9:
+                    projects.Udvidet_Kontrolstrukturer();
+                    break;
+
+                case 10:
+                    projects.Metoder_og_instanser();
+                    break;
+
+                case 11:
+                    projects.Returtyper_og_parametre();
+                    break;
+
+                case 12:
+                    projects.Instancevariabler();
+                    break;
+
+                case 13:
+                    projects.Nedarvning();
+                    break;
+
+                case 14:
+                    projects.Konstruktors();
+                    break;
+
+                case 15:
+                    projects.Arrays();
+                    break;
+
+                case 16:
+                    projects.Gennemløb_af_arrays();
+                    break;
+
+                case 17:
+                    projects.Public_Private_og_Protected();
+                    break;
+
+
                 default:
-                    
-                    Console.WriteLine("Invalid Option! Please try again.");
-                    Console.ForegroundColor = ConsoleColor.Red;
+
+                    Console.ForegroundColor = ConsoleColor.DarkRed;
+                    Console.WriteLine("Invalid Option! Please try again.");              
                     break;
 
             }
