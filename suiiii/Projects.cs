@@ -155,6 +155,41 @@ namespace suiiii
 
             switch (chooseOpgave)
             {
+                case 1:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Strings --------------------");
+
+                    opgaver.Strings_1();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
+
+                case 2:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Strings --------------------");
+
+                    opgaver.Strings_2();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
+
+                case 3:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Strings --------------------");
+
+                    opgaver.Strings_3();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
+
+                case 4:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Strings --------------------");
+
+                    opgaver.Strings_4();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
 
 
 
@@ -212,7 +247,14 @@ namespace suiiii
 
 
 
+                case 1:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Aritmetiske Udtryk --------------------");
 
+                    opgaver.Aritmetiske_Udtryk_1();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
 
 
 
@@ -266,7 +308,23 @@ namespace suiiii
             {
 
 
+                case 1:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Variabler i Udtryk --------------------");
 
+                    opgaver.Variabler_i_Udtryk_1();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
+
+                case 2:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Variabler i Udtryk --------------------");
+
+                    opgaver.Variabler_i_Udtryk_2();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
 
 
 
@@ -317,7 +375,14 @@ namespace suiiii
             switch (chooseOpgave)
             {
 
+                case 1:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Boolske Variable --------------------");
 
+                    opgaver.Boolske_variable_1();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
 
 
 
@@ -381,6 +446,61 @@ namespace suiiii
             {
 
 
+                case 1:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- If-else Statements --------------------");
+
+                    opgaver.If_else_statements_1();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
+
+                case 2:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- If-else Statements --------------------");
+
+                    opgaver.If_else_statements_2();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
+
+                case 3:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- If-else Statements --------------------");
+
+                    opgaver.If_else_statements_3();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
+
+                case 4:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- If-else Statements --------------------");
+
+                    opgaver.If_else_statements_4();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
+
+
+                case 5:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- If-else Statements --------------------");
+
+                    opgaver.If_else_statements_5();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
+
+
+                case 6:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- If-else Statements --------------------");
+
+                    opgaver.If_else_statements_6();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
 
 
 
