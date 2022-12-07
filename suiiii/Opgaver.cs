@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -377,19 +378,190 @@ namespace suiiii
 
         public void If_else_statements_7()
         {
-            // to be contiued 
-
+            
             Console.Title = "Festen";
             
-            string[] colors = {"rød", "grøn", "blå", "gul"};
+            string colors = "";
 
             Console.SetCursorPosition(40, 8);
-            Console.WriteLine("Alder: ");
-            Console.SetCursorPosition(50, 8);
-            int alder = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Age: ");
+            Console.SetCursorPosition(45, 8);
+            int Age = Convert.ToInt32(Console.ReadLine());
+
+
+            Console.SetCursorPosition(40, 9);
+            Console.WriteLine("Choose a color (red, green, blue, yellow): ");
+            Console.SetCursorPosition(83, 9);
+            colors = Console.ReadLine();
+
+
+            if (colors == "red")
+            {
+                
+                Console.BackgroundColor = ConsoleColor.Red;
+                Console.Clear();
+            }
+            else if (colors == "green")
+            {
+                
+                Console.BackgroundColor = ConsoleColor.Green;
+                Console.Clear();
+            }
+            else if (colors == "blue")
+            {
+                Console.BackgroundColor = ConsoleColor.Blue;
+                Console.Clear();
+            }
+            else if (colors == "yellow")
+            {
+                Console.BackgroundColor = ConsoleColor.DarkYellow;
+                Console.Clear();
+            }
+
+            if (Age > 18)
+            {
+                Console.SetCursorPosition(45, 9);
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("Velkommen til cocktailbaren");
+                Thread.Sleep(10000);
+                Console.ResetColor();
+                Console.Clear();
+               
+            }
+            else
+            {
+                Console.SetCursorPosition(45, 9);
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("Velkommen til  sodavandsbaren");
+                Thread.Sleep(10000);
+                Console.ResetColor();
+                Console.Clear();
+            }
+           
 
         }
 
+
+        public void Switch_Case_1()
+        {
+            Console.SetCursorPosition(40, 8);
+            Console.WriteLine("Choose a number from 1-6: ");
+            Console.SetCursorPosition(66, 8);
+            int num = Convert.ToInt32(Console.ReadLine());
+
+
+
+            switch (num)
+            {
+                case 1:
+                    Console.SetCursorPosition(40, 10);
+                    Console.WriteLine("Du har tastet " + num);
+                    Console.ReadKey();
+                    break;
+
+                case 2:
+                    Console.SetCursorPosition(40, 10);
+                    Console.WriteLine("Du har tastet " + num);
+                    Console.ReadKey();
+                    break;
+
+                case 3:
+                    Console.SetCursorPosition(40, 10);
+                    Console.WriteLine("Du har tastet " + num);
+                    Console.ReadKey();
+                    break;
+
+                case 4:
+                    Console.SetCursorPosition(40, 10);
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("TILLYKKE DU HAR VUNDET");
+                    Console.ReadKey();
+                    break;
+
+                case 5:
+                    Console.SetCursorPosition(40, 10);
+                    Console.WriteLine("Du har tastet " + num);
+                    Console.ReadKey();
+                    break;
+
+                case 6:
+                    Console.SetCursorPosition(40, 10);
+                    Console.WriteLine("Du har tastet " + num);
+                    Console.ReadKey();
+                    break;
+
+                default:
+                    Console.SetCursorPosition(40, 10);
+                    Console.WriteLine("Du har tastet forkert. Tallet skal være mellem 1 og 6");
+                    Thread.Sleep(10000);
+                    Console.ResetColor();
+                    Console.Clear();
+                    break;
+            }
+        }
+
+        public void Switch_Case_2()
+        {
+            int[] price = {34, 23, 54, 12, 65, 10};
+            string[] drinks = {"Isbjørn", "Champagnebrus", "Tequila Sunrise", "Mojito", "Brandbil", "Filur"};
+
+            Console.SetCursorPosition(40, 8);
+            Console.WriteLine("Choose a Drink: ");
+            Console.SetCursorPosition(40, 10);
+            Console.WriteLine("1. Isbjørn ");
+            Console.SetCursorPosition(40, 11);
+            Console.WriteLine("2. Champagnebrus");
+            Console.SetCursorPosition(40, 12);
+            Console.WriteLine("3. Tequila Sunrise");
+            Console.SetCursorPosition(40, 13);
+            Console.WriteLine("4. Mojito");
+            Console.SetCursorPosition(40, 14);
+            Console.WriteLine("5. Brandbil");
+            Console.SetCursorPosition(40, 15);
+            Console.WriteLine("6. Filur");
+            Console.SetCursorPosition(56, 8);
+            int drink = Convert.ToInt32(Console.ReadLine());
+
+            switch (drink)
+            {
+                case 1:
+                    Console.SetCursorPosition(40, 18);
+                    Console.WriteLine("You have Chosen " + drinks[0] + " and it costs " + price[0] + " USD");
+                    break;
+
+                case 2:
+                    Console.SetCursorPosition(40, 18);
+                    Console.WriteLine("You have Chosen " + drinks[1] + " and it costs " + price[1] + " USD");
+                    break;
+
+                case 3:
+                    Console.SetCursorPosition(40, 18);
+                    Console.WriteLine("You have Chosen " + drinks[2] + " and it costs " + price[2] + " USD");
+                    break;
+
+                case 4:
+                    Console.SetCursorPosition(40, 18);
+                    Console.WriteLine("You have Chosen " + drinks[3] + " and it costs " + price[3] + " USD");
+                    break;
+
+                case 5:
+                    Console.SetCursorPosition(40, 18);
+                    Console.WriteLine("You have Chosen " + drinks[4] + " and it costs " + price[4] + " USD");
+                    break;
+
+                case 6:
+                    Console.SetCursorPosition(40, 18);
+                    Console.WriteLine("You have Chosen " + drinks[5] + " and it costs " + price[5] + " USD");
+                    break;
+
+                default:
+                    Console.SetCursorPosition(40, 18);
+                    Console.WriteLine("Invalid Option!");
+                    break;
+            }
+
+
+        }
 
 
 

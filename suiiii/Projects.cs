@@ -430,6 +430,8 @@ namespace suiiii
             Console.WriteLine(opgave[4]);
             Console.SetCursorPosition(40, 12);
             Console.WriteLine(opgave[5]);
+            Console.SetCursorPosition(40, 13);
+            Console.WriteLine(opgave[6]);
 
 
             Console.SetCursorPosition(40, 23);
@@ -502,7 +504,14 @@ namespace suiiii
                     main_Menu.mainMenu();
                     break;
 
+                case 7:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- If-else Statements --------------------");
 
+                    opgaver.If_else_statements_7();
+                    //Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
 
 
 
@@ -554,9 +563,23 @@ namespace suiiii
             switch (chooseOpgave)
             {
 
+                case 1:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Switch Case --------------------");
 
+                    opgaver.Switch_Case_1();
+                    //Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
 
+                case 2:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Switch Case --------------------");
 
+                    opgaver.Switch_Case_2();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
 
 
 
