@@ -645,12 +645,87 @@ namespace suiiii
             switch (chooseOpgave)
             {
 
+                case 1:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Loops --------------------");
+
+                    opgaver.Loops_1();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
+
+                case 2:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Loops --------------------");
+
+                    opgaver.Loops_2();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
+
+                case 3:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Loops --------------------");
+
+                    opgaver.Loops_3();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
+
+                case 4:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Loops --------------------");
+
+                    opgaver.Loops_4();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
+
+                case 5:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Loops --------------------");
+
+                    opgaver.Loops_5();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
+
+                case 6:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Loops --------------------");
+
+                    opgaver.Loops_6();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
 
 
+                case 7:
+                    //Console.SetCursorPosition(35, 4);
+                    //Console.WriteLine("-------------------- Loops --------------------");
 
+                    opgaver.Loops_7();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
 
+                case 8:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Loops --------------------");
 
+                    opgaver.Loops_8();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
 
+                case 9:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Loops --------------------");
+
+                    opgaver.Loops_9();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
 
 
                 case 10:
@@ -705,12 +780,52 @@ namespace suiiii
             switch (chooseOpgave)
             {
 
+                case 1:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Udvidet Kontrolstrukturer --------------------");
+
+                    opgaver.Udvidet_kontrolstrukturer_1();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
+
+                case 2:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Udvidet Kontrolstrukturer --------------------");
+
+                    opgaver.Udvidet_kontrolstrukturer_2();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
+
+                case 3:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Udvidet Kontrolstrukturer --------------------");
+
+                    opgaver.Udvidet_kontrolstrukturer_3();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
 
 
+                case 4:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Udvidet Kontrolstrukturer --------------------");
+
+                    opgaver.Udvidet_kontrolstrukturer_4();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
 
 
+                case 5:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Udvidet Kontrolstrukturer --------------------");
 
-
+                    opgaver.Udvidet_kontrolstrukturer_5();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
 
 
                 case 10:

@@ -563,9 +563,362 @@ namespace suiiii
 
         }
 
+        public void Loops_1()
+        {
+            int num = 0;
+
+            while (num < 10)
+            {
+
+                num++;
+                Console.WriteLine(num);
+
+            }
+
+
+            for (int i = 1; i < 11; i++)
+            {
+                Console.WriteLine(i);
+            }
+        }
+
+        public void Loops_2()
+        {
+            int num = 0;
+
+            while (num < 100)
+            {
+
+                num++;
+                Console.WriteLine(num);
+
+            }
+
+
+            for (int i = 1; i < 101; i++)
+            {
+                Console.WriteLine(i);
+            }
+        }
+
+        public void Loops_3()
+        {
+            for (int i = 5; i < 105; i+= 5)
+            {
+                Console.WriteLine(i);
+            }
+        }
+
+
+        public void Loops_4()
+        {
+            int num = 21;
+
+            while (num > 1)
+            {
+                num--;
+                Console.WriteLine(num);
+
+            }
+
+
+            for (int i = 20; i > 0; i--)
+            {
+                Console.WriteLine(i);
+            }
+        }
+
+        public void Loops_5()
+        {
+            int num = 7;
+
+            for (int i = 1; i < 11; i++)
+            {
+                Console.WriteLine("{0} * {1} = {2}",i,num,(num * i));
+            }
+        }
+
+        public void Loops_6()
+        {
+            Console.SetCursorPosition(40, 8);
+            Console.WriteLine("Type a Number: ");
+            Console.SetCursorPosition(55, 8);
+            int num = Convert.ToInt32(Console.ReadLine());
+            
+
+            for (int i = 1; i < 11; i++)
+            {
+                
+                Console.WriteLine("{0} * {1} = {2}", i, num, (num * i));
+            }
+        }
+
+
+        public void Loops_7()
+        {
+           
+
+            for (int y = 4; y <= 8; y++)
+            {
+                for (int x = 20; x <= 30; x++)
+                {
+                    if (y == 4 || y == 8 || x == 20 || x == 30)
+                    {
+                        Console.Write("*");
+                    }
+                    else
+                    {
+                        Console.Write(" ");
+                    }
+                }
+                Console.WriteLine();
+            }
+
+
+
+        }
+
+        public void Loops_8()
+        {
+
+
+            string name = "peter";
+            int nameStart = (30 - 20 - name.Length) / 2 + 20;
+
+            for (int y = 4; y <= 8; y++)
+            {
+                for (int x = 20; x <= 30; x++)
+                {
+                    if (y == 4 || y == 8 || x == 20 || x == 30)
+                    {
+                        Console.Write("*");
+                    }
+                    else if (y == 6 && x >= nameStart && x < nameStart + name.Length)
+                    {
+                        Console.Write(name[x - nameStart]);
+                    }
+                    else
+                    {
+                        Console.Write(" ");
+                    }
+                }
+                Console.WriteLine();
+            }
+
+        }
+
+        public void Loops_9()
+        {
+
+            // Get the size of the frame from the user
+            Console.WriteLine("Enter the size of the frame: ");
+            int size = int.Parse(Console.ReadLine());
+
+            // Get the text that should be written in the middle of the frame
+            Console.WriteLine("Enter the text to be written in the middle of the frame: ");
+            string text = Console.ReadLine();
+
+            // Calculate the length of the text
+            int textLength = text.Length;
+
+            // Calculate the starting and ending positions of the text in the frame
+            int startPos = (size - textLength) / 2;
+            int endPos = startPos + textLength;
+
+            // Use a for loop to create the top and bottom of the frame
+            for (int i = 0; i < size; i++)
+            {
+                Console.Write("*");
+            }
+            Console.WriteLine();
+
+            // Use a for loop to create the sides of the frame
+            for (int i = 0; i < size - 2; i++)
+            {
+                // Print the left side of the frame
+                Console.Write("*");
+
+                // Print the text in the middle of the frame
+                for (int j = 0; j < size - 2; j++)
+                {
+                    if (j >= startPos && j < endPos)
+                    {
+                        Console.Write(text[j - startPos]);
+                    }
+                    else
+                    {
+                        Console.Write(" ");
+                    }
+                }
+
+                // Print the right side of the frame
+                Console.WriteLine("*");
+            }
+
+            // Use a for loop to create the bottom of the frame
+            for (int i = 0; i < size; i++)
+            {
+                Console.Write("*");
+            }
+
+        }
+
+        public void Udvidet_kontrolstrukturer_1()
+        {
+            // Set the starting value for the counter variable
+            int counter = 3;
+
+            // Create the for-loop
+            for (int i = 1; i <= 7; i++)
+            {
+                // Print the current number
+                Console.WriteLine(counter);
+
+                // Check if the current number is 21
+                if (counter == 21)
+                {
+                    // If the current number is 21, stop the loop
+                    break;
+                }
+
+                // Increment the counter variable by 3 after each iteration
+                counter += 3;
+            }
+
+            // Print a message after the loop has stopped
+            Console.WriteLine("The Loop has now stopped");
+
+
+
+        }
+
+        public void Udvidet_kontrolstrukturer_2()
+        {
+            // Set the starting value for the counter variable
+            int counter = 4;
+
+            // Create the while loop
+            while (counter <= 20)
+            {
+                // Check if the current number is 16
+                if (counter == 16)
+                {
+                    // If the current number is 16, skip this iteration
+                    counter += 4;
+                    continue;
+                }
+
+                // Print the current number
+                Console.WriteLine(counter);
+
+                // Increment the counter variable by 4 after each iteration
+                counter += 4;
+            }
+
+            // Print a message after the loop has stopped
+            Console.WriteLine("The Loop has now stopped");
+
+        }
+
+        public void Udvidet_kontrolstrukturer_3()
+        {
+            // Calculate transport deductions
+
+            // Distance in km
+            Console.Write("Enter the distance traveled in km: ");
+            double distance = double.Parse(Console.ReadLine());
+
+            // First 24 km no deduction
+            double deduction = 0;
+            if (distance > 24)
+            {
+                // 25-100 km 154 øre per km
+                if (distance <= 100)
+                {
+                    deduction = (distance - 24) * 0.154;
+                }
+                // Over 100 km 77 øre per km
+                else
+                {
+                    deduction = (100 - 24) * 0.154 + (distance - 100) * 0.77;
+                }
+            }
+
+            // Print the result
+            Console.WriteLine("Transport deductions: " + deduction);
+        }
+
+
+        public void Udvidet_kontrolstrukturer_4()
+        {
+            Console.Write("Enter your income: ");
+            double income = double.Parse(Console.ReadLine());
+
+            double tax = 0;
+            if (income >= 390000)
+            {
+                tax += (income - 390000) * 0.15;
+                income = 390000;
+            }
+            if (income >= 280000)
+            {
+                tax += (income - 280000) * 0.06;
+                income = 280000;
+            }
+            if (income >= 42000)
+            {
+                tax += (income - 42000) * 0.3;
+            }
+
+            if (tax > 0)
+            {
+                Console.WriteLine("You must pay a tax of DKK " + tax);
+            }
+            else
+            {
+                Console.WriteLine("You do not have to pay any tax");
+            }
+        }
+
+
+        public void Udvidet_kontrolstrukturer_5()
+        {
+            // Ask the user how much money is in the account
+            Console.WriteLine("How much money is in the account?");
+            var amount = double.Parse(Console.ReadLine());
+
+            // Determine the interest rate based on the amount in the account
+            double interestRate;
+            if (amount < 25000)
+            {
+                interestRate = 0.25;
+            }
+            else if (amount <= 150000)
+            {
+                interestRate = 1.25;
+            }
+            else
+            {
+                interestRate = 1.25 + 0.5;
+            }
+
+            // Calculate the interest using the formula:
+            // interest = amount * interest rate / 100
+            var interest = amount * interestRate / 100;
+
+            // Print the interest with 2 decimal places
+            Console.WriteLine($"The interest is: {interest:F2}");
+        }
+
 
 
 
 
     }
+
 }
+
+
+
+
+
