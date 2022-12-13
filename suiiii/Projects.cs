@@ -876,8 +876,24 @@ namespace suiiii
             {
 
 
+                case 1:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Metoder og instanser --------------------");
+
+                    opgaver.Metoder_og_instanser_1();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
 
 
+                case 2:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Metoder og instanser --------------------");
+
+                    opgaver.Metoder_og_instanser_2();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
 
 
 
@@ -934,10 +950,41 @@ namespace suiiii
             switch (chooseOpgave)
             {
 
+                case 1:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Returtyper og parametre --------------------");
 
+                    opgaver.Returtyper_og_parametre_1();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
 
+                case 2:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Returtyper og parametre --------------------");
 
+                    opgaver.Returtyper_og_parametre_2();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
 
+                case 3:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Returtyper og parametre --------------------");
+
+                    opgaver.Returtyper_og_parametre_3();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
+
+                case 4:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Returtyper og parametre --------------------");
+
+                    opgaver.Returtyper_og_parametre_4();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
 
 
 

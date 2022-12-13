@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography.X509Certificates;
@@ -43,7 +44,7 @@ namespace suiiii
             double Penge = 1234.34;
 
             Console.SetCursorPosition(20, 7);
-            Console.WriteLine("Jeg hedder "+ Navn + ", er " + Alder + " år gammel og har tjent " + Penge + " kr. på at lappe cykler");
+            Console.WriteLine("Jeg hedder " + Navn + ", er " + Alder + " år gammel og har tjent " + Penge + " kr. på at lappe cykler");
         }
 
         public void Variabler_4()
@@ -59,7 +60,7 @@ namespace suiiii
             Console.SetCursorPosition(46, 11);
             Console.WriteLine(Kage + Øl + Pølse);
         }
-        
+
         public void Variabler_5()
         {
             Console.SetCursorPosition(40, 7);
@@ -80,7 +81,7 @@ namespace suiiii
         public void Variabler_6()
         {
             double PI = Math.PI;
-         
+
 
             Console.SetCursorPosition(40, 7);
             Console.WriteLine("Radius: ");
@@ -92,10 +93,10 @@ namespace suiiii
             Console.WriteLine("Areal: " + Areal);
 
         }
-        
+
         public void Strings_1()
         {
-            
+
             string Name = "Peter";
             int i = 23;
             double num = 12.5;
@@ -138,13 +139,13 @@ namespace suiiii
             string v = "kr. i banken";
 
             Console.SetCursorPosition(40, 8);
-            Console.WriteLine(c + amount + v );
+            Console.WriteLine(c + amount + v);
         }
 
         public void Aritmetiske_Udtryk_1()
         {
             int i = 2 + 1 * 2;
-            int x = (2+1) * 2;
+            int x = (2 + 1) * 2;
             int y = 5 / 2;
             decimal v = 8 % 3;
             decimal b = 1 - 5;
@@ -224,7 +225,7 @@ namespace suiiii
                 Console.SetCursorPosition(40, 8);
                 Console.WriteLine("Summen er 100");
             }
-        
+
         }
 
         public void If_else_statements_2()
@@ -306,11 +307,11 @@ namespace suiiii
 
         public void If_else_statements_5()
         {
-          
+
             string brugernavn = "petela";
             int password = 1234;
 
-           
+
 
             Console.SetCursorPosition(40, 7);
             Console.WriteLine("brugernavn: ");
@@ -344,7 +345,7 @@ namespace suiiii
                 Console.WriteLine("brugernavnet er forkert");
             }
 
-        
+
         }
 
         public void If_else_statements_6()
@@ -378,9 +379,9 @@ namespace suiiii
 
         public void If_else_statements_7()
         {
-            
+
             Console.Title = "Festen";
-            
+
             string colors = "";
 
             Console.SetCursorPosition(40, 8);
@@ -397,13 +398,13 @@ namespace suiiii
 
             if (colors == "red")
             {
-                
+
                 Console.BackgroundColor = ConsoleColor.Red;
                 Console.Clear();
             }
             else if (colors == "green")
             {
-                
+
                 Console.BackgroundColor = ConsoleColor.Green;
                 Console.Clear();
             }
@@ -426,7 +427,7 @@ namespace suiiii
                 Thread.Sleep(10000);
                 Console.ResetColor();
                 Console.Clear();
-               
+
             }
             else
             {
@@ -437,7 +438,7 @@ namespace suiiii
                 Console.ResetColor();
                 Console.Clear();
             }
-           
+
 
         }
 
@@ -502,8 +503,8 @@ namespace suiiii
 
         public void Switch_Case_2()
         {
-            int[] price = {34, 23, 54, 12, 65, 10};
-            string[] drinks = {"Isbjørn", "Champagnebrus", "Tequila Sunrise", "Mojito", "Brandbil", "Filur"};
+            int[] price = { 34, 23, 54, 12, 65, 10 };
+            string[] drinks = { "Isbjørn", "Champagnebrus", "Tequila Sunrise", "Mojito", "Brandbil", "Filur" };
 
             Console.SetCursorPosition(40, 8);
             Console.WriteLine("Choose a Drink: ");
@@ -603,7 +604,7 @@ namespace suiiii
 
         public void Loops_3()
         {
-            for (int i = 5; i < 105; i+= 5)
+            for (int i = 5; i < 105; i += 5)
             {
                 Console.WriteLine(i);
             }
@@ -634,7 +635,7 @@ namespace suiiii
 
             for (int i = 1; i < 11; i++)
             {
-                Console.WriteLine("{0} * {1} = {2}",i,num,(num * i));
+                Console.WriteLine("{0} * {1} = {2}", i, num, (num * i));
             }
         }
 
@@ -644,11 +645,11 @@ namespace suiiii
             Console.WriteLine("Type a Number: ");
             Console.SetCursorPosition(55, 8);
             int num = Convert.ToInt32(Console.ReadLine());
-            
+
 
             for (int i = 1; i < 11; i++)
             {
-                
+
                 Console.WriteLine("{0} * {1} = {2}", i, num, (num * i));
             }
         }
@@ -656,7 +657,7 @@ namespace suiiii
 
         public void Loops_7()
         {
-           
+
 
             for (int y = 4; y <= 8; y++)
             {
@@ -910,6 +911,64 @@ namespace suiiii
             Console.WriteLine($"The interest is: {interest:F2}");
         }
 
+
+        public void Metoder_og_instanser_1()
+        {
+            Book SherlockHolmes = new Book();
+            SherlockHolmes.PrintInfo();
+            
+        }
+
+       
+        public void Metoder_og_instanser_2()
+        {
+            Book SherlockHolmes = new Book();
+           
+         
+
+            if (SherlockHolmes.HarRåd(150, 200))
+            {
+                Console.WriteLine("I can afford it");
+            }
+            else
+            {
+                Console.WriteLine("I unfortunately can't afford it");
+            }
+        }
+
+
+        public void Returtyper_og_parametre_1()
+        {
+            Bil bil = new Bil();
+            bil.MotorStartet();
+            bil.MotorSlukket();
+        }
+
+        public void Returtyper_og_parametre_2()
+        {
+            Bil bil = new Bil();
+            bil.fillgas(2.5);
+        }
+
+        public double benzin()
+        {
+            return 2.5;
+        }
+
+       
+
+        public void Returtyper_og_parametre_3()
+        {
+            Bil bil = new Bil();
+            bil.FillGas(benzin(), false);
+        }
+
+
+        public void Returtyper_og_parametre_4()
+        {
+            Bil bil = new Bil();
+            bil.RemainingGas(1.1);
+        }
 
 
 
