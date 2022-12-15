@@ -914,7 +914,7 @@ namespace suiiii
 
         public void Metoder_og_instanser_1()
         {
-            Book SherlockHolmes = new Book();
+            Book SherlockHolmes = new Book(150,"Jeg er en bog");
             SherlockHolmes.PrintInfo();
             
         }
@@ -922,7 +922,7 @@ namespace suiiii
        
         public void Metoder_og_instanser_2()
         {
-            Book SherlockHolmes = new Book();
+            Book SherlockHolmes = new Book(150, "Jeg er en bog");
            
          
 
@@ -971,6 +971,68 @@ namespace suiiii
         }
 
 
+        public void Instancevariabler_1()
+        {
+            Book book = new Book(150, "Jeg er en bog");
+
+            // Set the price and title of the book
+            book.SetPrice(240);
+            book.SetTitle("Moby Dick");
+
+            // Determine if we have enough money to buy the book
+            if (book.CanAffordBook(500))
+            {
+                Console.WriteLine(book.GetTitle() + " - costs DKK " + book.GetPrice());
+            }
+            else
+            {
+                Console.WriteLine("Not enough money to buy " + book.GetTitle());
+            }
+        }
+
+
+
+
+
+        public void Nedarvning_1()
+        {
+            var chair = new Chair
+            {
+                Material = "Wood",
+                Color = "Red",
+                NumberOfLegs = 4,
+                Upholstery = "Leather"
+            };
+
+            var computer = new Computer
+            {
+                Material = "Plastic",
+                Color = "Black",
+                NumberOfLegs = 0,
+                OperatingSystem = "Windows 10"
+            };
+
+            Console.WriteLine("Chair: ");
+            Console.WriteLine("Material: " + chair.Material);
+            Console.WriteLine("Color: " + chair.Color);
+            Console.WriteLine("Number of legs: " + chair.NumberOfLegs);
+            Console.WriteLine("Upholstery: " + chair.Upholstery);
+
+            Console.WriteLine("Computer: ");
+            Console.WriteLine("Material: " + computer.Material);
+            Console.WriteLine("Color: " + computer.Color);
+            Console.WriteLine("Number of legs: " + computer.NumberOfLegs);
+            Console.WriteLine("Operating system: " + computer.OperatingSystem);
+
+        }
+
+
+        public void konstruktors_1()
+        {
+            Book book = new Book(150, "Harry Potter");
+
+            book.Reading();
+        }
 
 
     }

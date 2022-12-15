@@ -1035,7 +1035,14 @@ namespace suiiii
             {
 
 
+                case 1:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Instancevariabler --------------------");
 
+                    opgaver.Instancevariabler_1();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
 
 
 
@@ -1093,7 +1100,14 @@ namespace suiiii
             {
 
 
+                case 1:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Nedarvning --------------------");
 
+                    opgaver.Nedarvning_1();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
 
 
 
@@ -1148,7 +1162,14 @@ namespace suiiii
             {
 
 
+                case 1:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Konstruktors --------------------");
 
+                    opgaver.konstruktors_1();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
 
 
 
