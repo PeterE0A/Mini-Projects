@@ -1222,6 +1222,14 @@ namespace suiiii
             {
 
 
+                case 1:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Arrays --------------------");
+
+                    opgaver.Arrays_1();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
 
 
 
@@ -1277,7 +1285,14 @@ namespace suiiii
             {
 
 
+                case 1:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Gennemløb af arays --------------------");
 
+                    opgaver.Gennemløb_af_arrays_1();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
 
 
 
@@ -1332,6 +1347,14 @@ namespace suiiii
             {
 
 
+                case 1:
+                    Console.SetCursorPosition(35, 4);
+                    Console.WriteLine("-------------------- Public, Private og Protected --------------------");
+
+                    opgaver.Public_Private_og_Protected();
+                    Console.ReadKey();
+                    main_Menu.mainMenu();
+                    break;
 
 
 

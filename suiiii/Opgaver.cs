@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography.X509Certificates;
@@ -1033,6 +1034,44 @@ namespace suiiii
 
             book.Reading();
         }
+
+
+        public void Arrays_1()
+        {
+            int[] i = { -2, -1, 0, 10 };
+
+            Console.WriteLine(i[3] + " " +  i[1]);
+            Console.WriteLine(i[0] + i[1] + i[2] + i[3]);
+        }
+
+        public void Gennemløb_af_arrays_1()
+        {
+            int[] i = {1,2,3,4,5,6,7,8,9,10};
+            int sum = 0;
+
+            for (int x = 0; x < i.Length; x++)
+            {
+                sum += i[x];
+            }
+
+            Console.WriteLine("The sum of the values is: " + sum);
+
+        } 
+
+
+        public void Public_Private_og_Protected()
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Private: In C#, the private keyword is an access modifier that is used to specify the access level of a class member (such as a field, method, or property). A member marked as private is only accessible within the class in which it is declared. It is not accessible from outside the class, or from derived classes (classes that inherit from the class where the private member is declared). ");
+            Console.WriteLine("");
+            Console.WriteLine("Protected: In C#, the protected keyword is an access modifier that is used to specify the access level of a class member (such as a field, method, or property). A member marked as protected is only accessible within the class in which it is declared, and from derived classes (classes that inherit from the class where the protected member is declared). It is not accessible from outside the class.");
+            Console.WriteLine("");
+            Console.WriteLine("Public: In C#, the public keyword is an access modifier that is used to specify the access level of a class member (such as a field, method, or property). A member marked as public is accessible from anywhere within the program, including from outside the class in which it is declared.");
+
+
+        }
+
+
 
 
     }
